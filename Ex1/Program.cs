@@ -17,7 +17,7 @@ namespace Ex1
         }
 
         public static int sumTwoNumbers(int num1, int num2) {
-            return 50;
+            return num1 + num2;
         }
 
     }
