@@ -9,15 +9,16 @@ namespace Ex1
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
         }
 
-        public static int sumTwoNumbers(int num1, int num2) {
-            return 0;
+        public static int sumTwoNumbers(int num1, int num2) {      
+            int suma = num1 + num2;
+            return suma;
         }
 
     }
