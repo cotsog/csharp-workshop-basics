@@ -14,7 +14,7 @@ namespace Ex3
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
 
         static void Main(string[] args)
         {
@@ -22,7 +22,19 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            return 0.0;
+            double atp, at, s;
+            if((a>0)&(b>0)&(c>0))
+            {
+            s = (1/2)*(a+b+c);
+            atp= s*(s-a)*(s-b)*(s-c);
+            at= Math.Pow(atp, (1/2));
+            }
+            else
+            {
+                return 0;
+            }
+        
+            return atp;
         }
     }
 }
