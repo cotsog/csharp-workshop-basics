@@ -22,7 +22,7 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b) {
-            double Area=(a/b)/2;
+            double Area=(a*b)/2;
             return Area;
         }
     }
