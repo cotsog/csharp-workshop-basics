@@ -17,9 +17,9 @@ namespace Ex1
             Console.WriteLine("Hello World");
         }
 
-        public static int sumTwoNumbers(int num1, int num2, int pls) {
+        public static int sumTwoNumbers(int num1, int num2) {
             
-            pls= (num1 + num2);
+            int pls= (num1 + num2);
             return pls;
         }
 
