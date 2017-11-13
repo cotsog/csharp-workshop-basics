@@ -21,7 +21,7 @@ namespace Ex3
             Console.WriteLine("Hello World!");
         }
 
-        public static double triangleArea(double a, double b) {
+        public static double triangleArea(double a, double b, double c) {
             double Area=(a*b)/2;
             return Area;
         }
