@@ -18,14 +18,14 @@ namespace Ex4
         }
 
         public static int largerNumber(int a, int b, int c) {
-            int largest=0;
+            int largest;
             if(a>b && a>c){
                 largest=a;
             }
             else if(b>a && b>c){
                 largest=b;
             }
-            else if(c>a && c>b){
+            else {
                 largest=c;
             }
             return largest;
