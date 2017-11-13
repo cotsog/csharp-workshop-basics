@@ -22,7 +22,7 @@ namespace Ex5
 
         public static string SupressWhiteSpaces(string text) {
             string text2= text.Trim();
-            return text2;
+            return $" He aqui sin espacios {text2}";
         }
     }
 }
