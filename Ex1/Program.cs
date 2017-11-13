@@ -13,12 +13,14 @@ namespace Ex1
         
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Hello World");
         }
 
-        public static int sumTwoNumbers(int num1, int num2) {
-            int suma= (num1 + num2);
-            return suma;
+        public static int sumTwoNumbers(int num1, int num2, int pls) {
+            
+            pls= (num1 + num2);
+            return pls;
         }
 
     }
