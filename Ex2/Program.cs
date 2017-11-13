@@ -20,7 +20,10 @@ namespace Ex2
         }
     
         public static string GreetingsUser(string username) {
-            return  $"greetings {username}";
+            
+           
+            string nombredelusuario= $"greetings {username}"; 
+            return nombredelusuario;
         }    
     }
 }
