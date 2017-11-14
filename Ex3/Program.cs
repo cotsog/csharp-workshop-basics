@@ -34,7 +34,7 @@ namespace Ex3
                         double ccuarta=Math.Pow(c,4);
                         double operation1=Math.Pow((acuadrada+bcuadrada+ccuadrada),2);
                         double operation2=2*(acuarta+bcuarta+ccuarta);
-                        double operation3=(1/4)*(Math.Sqrt((operation1-operation2)));
+                        operation3=(1/4)*(Math.Sqrt((operation1-operation2)));
                     }
                     else{
                         operation3=0;

@@ -22,7 +22,7 @@ namespace Ex5
 
         public static string SupressWhiteSpaces(string text) {            
             string Suprimir="";
-            if(text.IsNullOrEmpty){
+            if(text==null){
                 //No hacer cambios en el string
             }
             else{
