@@ -19,15 +19,14 @@ namespace Ex3
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            
         }
 
         public static double triangleArea(double a, double b, double c) {
             
-            if((a>0)&(b>0)&(c>0))
-            {
-            double s=(1/2)*(a+b+c);
-            }
-            return s;
+            double salida;
+            salida=(1/2)*(a+b+c);
+            return salida;
         }
     }
 }
