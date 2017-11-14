@@ -22,8 +22,16 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            double s=(a+b+c)/2.0;
-            return s;
+            double acuadrada=Math.Pow(a,2);
+            double bcuadrada=Math.Pow(b,2);
+            double ccuadrada=Math.Pow(c,2);
+            double acuarta=Math.Pow(a,4);
+            double bcuarta=Math.Pow(b,4);
+            double ccuarta=Math.Pow(c,4);
+            double operation1=Math.Pow((acuadrada+bcuadrada+ccuadrada),2);
+            double operation2=2*(acuarta+bcuarta+ccuarta);
+            double operation3=(1/4)*(Math.Sqrt((operation1-operation2)));
+            return operation3;
         }
     }
 }
