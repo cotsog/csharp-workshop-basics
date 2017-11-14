@@ -25,7 +25,7 @@ namespace Ex3
         public static double triangleArea(double a, double b, double c) {
             
             double salida;
-            salida=(1/2)*(a+b+c);
+            salida=(a+b+c)/2;
             return salida;
         }
     }
