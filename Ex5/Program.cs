@@ -20,9 +20,8 @@ namespace Ex5
             Console.WriteLine("Hello World!");
         }
 
-        public static string SupressWhiteSpaces(string text) {
-            string initial="Hello "+text;
-            string Suppresed=initial.Trim();
+        public static string SupressWhiteSpaces(string text) {            
+            string Suppresed=text.Trim();
             return Suppresed;
         }
     }
