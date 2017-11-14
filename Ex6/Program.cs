@@ -26,7 +26,20 @@ namespace Ex6
         }
 
         public static double Calculate(double number1, double number2, string op) {
-            return 0.0;
+            double resultado=0.0;
+            if(op=="*"){
+                resultado=number1*number2;
+            }
+            else if(op=="-"){
+                resultado=number1-number2;
+            }
+            else if(op=="/"){
+                resultado=number1/number2;
+            }
+            else if(op=="^"){
+                resultado=Math.Pow(number1,number2);
+            }
+            return resultado;
         }
     }
 }
