@@ -26,15 +26,13 @@ namespace Ex3
             if((a>0)&(b>0)&(c>0))
             {
             s = (1/2)*(a+b+c);
-            atp= s*(s-a)*(s-b)*(s-c);
-            at= Math.Pow(atp, (1/2));
             }
             else
             {
                 return 0;
             }
         
-            return atp;
+            return s;
         }
     }
 }
