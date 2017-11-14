@@ -26,7 +26,7 @@ namespace Ex5
                 //No hacer cambios en el string
             }
             else{
-                Suprimir=text.Trim();
+                Suprimir=$"{text.Trim()}";
             }
             return Suprimir;
         }
