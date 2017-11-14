@@ -20,13 +20,10 @@ namespace Ex5
             Console.WriteLine("Hello World!");
         }
 
-        public static string SupressWhiteSpaces(string text) {            
-            string Suprimir="";
+        public static string SupressWhiteSpaces(string text) {          
+            string Suprimir=text.trim();
             if(string.IsNullOrEmpty(text)){
-                //No modificamos suprimir
-            }
-            else{
-                Suprimir="{text.Trim()}";
+                Suprimir="";
             }
             return Suprimir;
         }
