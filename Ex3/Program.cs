@@ -24,8 +24,8 @@ namespace Ex3
         public static double triangleArea(double a, double b, double c) {
             double s=(a+b+c)/2;
             double operation=(s*(s-a)*(s-b)*(s-c));
-            double Area=Math.Sqrt(operation);
-            return Area;
+            double AreaT=Math.Sqrt(operation);
+            return AreaT;
         }
     }
 }
