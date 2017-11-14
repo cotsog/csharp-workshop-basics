@@ -19,32 +19,22 @@ namespace Ex4
 
         public static int largerNumber(int a, int b, int c) {
             int salida; 
-            if((a>b)&&(a>c))
+            if(a>b&&a>c)
             {
                  salida = a;
             }
-           if((b>a)&&(b>c))
+            else
             {
+                if(b>a&&b>c)
+                {
                  salida=b;
+                 }
+                 else
+                 {
+                     salida=c; 
+                 }
             }
-            if((c>a)&&(c>b))
-            {
-                 salida c;
-            }
-            
-            if(a==b)
-            {
-                salida a;
-            }
-            if(b==c)
-            {
-                salida b;
-            }
-            if(a==c)
-            {
-                salida a;
-            }
-            Return salida; 
+           Return=salida;
         }
     }
 }
