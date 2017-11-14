@@ -34,7 +34,7 @@ namespace Ex4
                      salida=c; 
                  }
             }
-           Return=salida;
+           return=salida;
         }
     }
-}
+}re
