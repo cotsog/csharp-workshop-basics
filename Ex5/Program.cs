@@ -26,8 +26,7 @@ namespace Ex5
                 //No modificamos suprimir
             }
             else{
-                Suprimir=Suprimir+text;
-                Suprimir.Trim();
+                Suprimir=text.Replace(" ","");
             }
             return Suprimir;
         }
