@@ -22,16 +22,11 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            double atp, at, s;
+            double s;
             if((a>0)&(b>0)&(c>0))
             {
             s = (1/2)*(a+b+c);
             }
-            else
-            {
-                return 0;
-            }
-        
             return s;
         }
     }
