@@ -23,9 +23,9 @@ namespace Ex3
 
         public static double triangleArea(double a, double b, double c) {
             double operation3=0;
-            if(a!=0 & a<0){
-                if(b!=0 & b<0){
-                    if(c!=0 & c<0){
+            if(a!=0 && a>0){
+                if(b!=0 && b>0){
+                    if(c!=0 && c>0){
                         double acuadrada=Math.Pow(a,2);
                         double bcuadrada=Math.Pow(b,2);
                         double ccuadrada=Math.Pow(c,2);
