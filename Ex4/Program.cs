@@ -31,7 +31,18 @@ namespace Ex4
                  return c;
             }
             
-            return 0;
+            if(a==b)
+            {
+                return a;
+            }
+            if(b==c)
+            {
+                return b;
+            }
+            if(a==c)
+            {
+                return a;
+            }
         }
     }
 }
