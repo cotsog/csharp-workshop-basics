@@ -21,8 +21,7 @@ namespace Ex5
         }
 
         public static string SupressWhiteSpaces(string text) {            
-            string Suppresed=text.Trim();
-            return Suppresed;
+            return $"{text.Trim()}";
         }
     }
 }
