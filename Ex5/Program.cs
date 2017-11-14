@@ -21,7 +21,14 @@ namespace Ex5
         }
 
         public static string SupressWhiteSpaces(string text) {            
-            return $"{text.Trim()}";
+            string Suprimir="";
+            if(text.IsNullOrEmpty){
+                //No hacer cambios en el string
+            }
+            else{
+                Suprimir=$" {text.Trim()}";
+            }
+            return Suprimir;
         }
     }
 }
