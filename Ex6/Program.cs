@@ -26,22 +26,22 @@ namespace Ex6
         }
 
         public static double Calculate(double number1, double number2, string op) {
-            double salida; 
+            double salida=0.0; 
              switch (op)
              {
                  case "^": 
                  
                      salida= Math.Pow(number1,number2);
-                     break;
+                     break();
                 case "+": 
                     salida= number1+number2;
-                    break;
+                    break();
                 case "-": 
                     salida= number1-number2;
-                    break;
+                    break();
                  case "*": 
                     salida= number1*number2;
-                    break;
+                    break();
                  case "/":
                     if (number2==0)
                         {
@@ -52,10 +52,11 @@ namespace Ex6
                             salida= number1/number2;
                         }
                     
-                    break;
+                   break();
                 
                  default:
-                 break;
+                 salida=0.0;
+                 break();
              }
             return salida;
         }
