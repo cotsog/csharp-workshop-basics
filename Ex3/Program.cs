@@ -29,6 +29,7 @@ namespace Ex3
             {
                  salida=(a+b+c)/2;
             }
+            salida= -1;
         
             return salida;
         }
