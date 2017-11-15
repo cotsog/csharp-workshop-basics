@@ -16,13 +16,21 @@ namespace Ex5
     {
         public static bool ENABLED = true;
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+        { 
+            Console.WriteLine(SupressWhiteSpaces(""));
         }
 
         public static string SupressWhiteSpaces(string text) {
-            string text2= text.Trim();
-            return text2;
+          string textwhitoutspace ="10";
+          if(text=="")
+          {
+              textwhitoutspace="";
+          }
+           else 
+           {
+            textwhitoutspace = text.Replace(" ","");
+           }
+            return textwhitoutspace;
         }
     }
 }
