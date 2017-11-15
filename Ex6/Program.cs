@@ -44,6 +44,7 @@ namespace Ex6
                     break;
                 
                  default:
+                 break;
              }
             return salida;
         }
