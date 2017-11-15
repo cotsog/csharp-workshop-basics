@@ -22,7 +22,7 @@ namespace Ex2
         public static string GreetingsUser(string username) {
             
            
-            string nombredelusuario= $"greetings {username}"; 
+            string nombredelusuario= $"Greetings {username}"; 
             return nombredelusuario;
         }    
     }
