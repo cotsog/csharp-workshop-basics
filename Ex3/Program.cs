@@ -23,11 +23,10 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            
+            double salida=0;
             
             if( a>0 & b>0 & c>0)
             {
-                double salida;
                  salida=(a+b+c)/2;
             }
         
