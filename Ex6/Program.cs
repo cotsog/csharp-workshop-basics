@@ -33,6 +33,9 @@ namespace Ex6
                  
                      salida= Math.Pow(number1,number2);
                      break;
+                case "+": 
+                    salida= number1+number2;
+                    break;
                 case "-": 
                     salida= number1-number2;
                     break;
