@@ -29,19 +29,19 @@ namespace Ex6
             double salida=0.0; 
              switch (op)
              {
-                 case " ^ ": 
+                 case "^": 
                      salida= Math.Pow(number1,number2);
                      break;
-                case " + ": 
+                case "+": 
                       salida= number1+number2;
                      break;  
-                case " - ": 
+                case "-": 
                         salida= number1-number2;
                      break;
-                 case " * ": 
+                 case "*": 
                      salida= number1*number2;
                      break;
-                 case " / ":
+                 case "/":
                     if (number2==0)
                         {
                             salida=0.0;
