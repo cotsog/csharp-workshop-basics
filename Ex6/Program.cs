@@ -19,10 +19,10 @@ namespace Ex6
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
-            Console.WriteLine(Calculate(2,5,"+"));
+            Console.WriteLine("Hello World");
         }
 
         public static double Calculate(double number1, double number2, string op) {
