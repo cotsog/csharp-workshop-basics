@@ -19,14 +19,33 @@ namespace Ex6
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
         public static double Calculate(double number1, double number2, string op) {
-            return 0.0;
+            double salida=0.0; 
+             switch (op)
+             {
+                 case "^": 
+                 
+                     salida= Math.Pow(number1,number2);
+                     break;
+                case "-": 
+                    salida= number1-number2;
+                    break;
+                 case "*": 
+                    salida= number1*number2;
+                    break;
+                 case "/": 
+                    salida= number1/number2;
+                    break;
+                
+                 default:
+             }
+            return salida;
         }
     }
 }
