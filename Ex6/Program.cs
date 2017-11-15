@@ -32,16 +32,16 @@ namespace Ex6
                  case "^": 
                  
                      salida= Math.Pow(number1,number2);
-                     break();
+                     break;
                 case "+": 
                     salida= number1+number2;
-                    break();
+                    break;
                 case "-": 
                     salida= number1-number2;
-                    break();
+                    break;
                  case "*": 
                     salida= number1*number2;
-                    break();
+                    break;
                  case "/":
                     if (number2==0)
                         {
@@ -52,11 +52,11 @@ namespace Ex6
                             salida= number1/number2;
                         }
                     
-                   break();
+                   break;
                 
                  default:
                  salida=0.0;
-                 break();
+                 break;
              }
             return salida;
         }
