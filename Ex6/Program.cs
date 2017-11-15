@@ -27,34 +27,35 @@ namespace Ex6
 
         public static double Calculate(double number1, double number2, string op) {
             double salida=0.0; 
-             switch (op)
+         if (op== "+")
+         {
+             salida= number1+number2;
+         }
+          if (op== "-")
+         {
+             salida= number1-number2;
+         }
+          if (op== "*")
+         {
+             salida= number1*number2;
+         }
+          if (op== "/")
+         {
+             if (number2==0)
              {
-                 case "^": 
-                     salida= Math.Pow(number1,number2);
-                     break;
-                case "+": 
-                      salida= number1+number2;
-                     break;  
-                case "-": 
-                        salida= number1-number2;
-                     break;
-                 case "*": 
-                     salida= number1*number2;
-                     break;
-                 case "/":
-                    if (number2==0)
-                        {
-                            salida=0.0;
-                        } 
-                        else
-                        {
-                            salida= number1/number2;
-                        }
-                      break;
-                 default:
                  salida=0.0;
-                 break;
              }
+             else
+             {
+                 salida= number1/number2;
+             }
+             
+         }
+          if (op== "^")
+         {
+             salida= Math.Pow(number1,number2);
+         }
+
          return salida;
         }
     }
