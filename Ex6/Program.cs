@@ -45,7 +45,7 @@ namespace Ex6
                  case "/":
                     if (number2==0)
                         {
-                            salida=0.0;}
+                            salida=0.0;
                         } 
                         else
                         {
