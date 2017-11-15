@@ -22,7 +22,7 @@ namespace Ex6
         public static bool ENABLED = true;
         static void Main(string[] args)
         {
-            Console.WriteLine(Calculate(100,2,"+"));
+            Console.WriteLine("Hello world");
         }
 
         public static double Calculate(double number1, double number2, string op) {
