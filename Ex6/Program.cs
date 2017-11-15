@@ -42,8 +42,13 @@ namespace Ex6
                  case "*": 
                     salida= number1*number2;
                     break;
-                 case "/": 
-                    salida= number1/number2;
+                 case "/":
+                    if (number2==0)
+                        {salida=0.0;} else
+                        {
+                            salida= number1/number2;
+                        }
+                    
                     break;
                 
                  default:
