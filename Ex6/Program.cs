@@ -19,7 +19,7 @@ namespace Ex6
 {
     public class Program
     {
-        public static bool ENABLED = true;
+        public static bool ENABLED = false;
         static void Main(string[] args)
         {
             Console.WriteLine(Calculate(2,5,"+"));

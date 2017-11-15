@@ -14,7 +14,7 @@ namespace Ex5
 {
     public class Program
     {
-        public static bool ENABLED = true;
+        public static bool ENABLED = false;
         static void Main(string[] args)
         { 
             Console.WriteLine(SupressWhiteSpaces(""));
