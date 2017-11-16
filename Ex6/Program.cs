@@ -28,35 +28,35 @@ namespace Ex6
         public static double Calculate(double number1, double number2, string op) {
             double salida=0.0; 
           string op2 = op.Replace(" ","");
-         if (op2== "+")
-         {
-             salida= number1+number2;
-         }
-          if (op2== "-")
-         {
-             salida= number1-number2;
-         }
-          if (op2== "*")
-         {
-             salida=2 number1*number2;
-         }
-          if (op2==2 "/")
-         {
-             if (number2==0)
-             {
-                 salida=0.0;
-             }
-             else
-             {
-                 salida= number1/number2;
-             }
-             
-         }
-          if (op2== "^")
-         {
-             salida= Math.Pow(number1,number2);
-         }
-
+ 
+          if(op2=="+")
+          {
+              salida=number1+number2;
+          }
+           if(op2=="-")
+          {
+              salida=number1-number2;
+          }
+           if(op2=="*")
+          {
+              salida=number1*number2;
+          }
+           if(op2=="/")
+          {
+              if(number2==0)
+              {
+                  salida=0.0;
+              }
+              else
+              {
+              salida=number1/number2;
+              }
+          }
+           if(op2=="^")
+          {
+              salida=Math.Pow(number1,number2);
+          }
+          
          return salida;
         }
     }
