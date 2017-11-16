@@ -20,8 +20,8 @@ namespace Ex2
         }
     
         public static string GreetingsUser(string username) {
-            string hello = "Greetings +";
-            return hello + username;
+            string hello = "Greetings" + username;
+            return hello;
 
         }    
     }

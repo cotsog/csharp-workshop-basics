@@ -13,7 +13,7 @@ namespace Ex1
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello Borld");
         }
 
         public static int sumTwoNumbers(int num1, int num2) {      
