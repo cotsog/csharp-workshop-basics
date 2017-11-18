@@ -9,7 +9,7 @@ namespace Ex1
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         
         static void Main(string[] args)
         {
@@ -17,7 +17,9 @@ namespace Ex1
         }
 
         public static int sumTwoNumbers(int num1, int num2) {
-            return 0;
+           int sumatwonumbers= num1 + num2;
+        
+            return sumatwonumbers;
         }
 
     }
