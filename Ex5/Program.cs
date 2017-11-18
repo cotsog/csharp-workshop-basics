@@ -14,14 +14,15 @@ namespace Ex5
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
         public static string SupressWhiteSpaces(string text) {
-            return "";
+
+            return text.Replace(" ", " ");
         }
     }
 }

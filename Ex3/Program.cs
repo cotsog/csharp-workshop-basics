@@ -24,9 +24,9 @@ namespace Ex3
         public static double triangleArea(double a, double b, double c) {
 
             if (a<=0 || b<=0 || c<=0){
-            return= -1;
+            return -1;
             }
-            return 0.0;
+            return (a + b + c)/2;
         }
     }
 }
