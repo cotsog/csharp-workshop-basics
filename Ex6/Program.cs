@@ -19,7 +19,7 @@ namespace Ex6
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -29,22 +29,23 @@ namespace Ex6
             if(op == null){
                 return 0.0;
             }
-            if(op == "+"){
+            string operators = op.Trim();
+            if(operators == "+"){
                 return number1 + number2;
             }
-            if(op == "-"){
+            if(operators == "-"){
                 return number1 + number2;
             }
-            if(op == "*"){
+            if(operators == "*"){
                 return number1 * number2;
             }
-            if(op == "/"){
+            if(operators == "/"){
                 if(number2 == 0.0){
                     return 0.0;
                 }
                 return number1 / number2;
             }
-            if(op == "^"){
+            if(operators == "^"){
                 return Math.Pow(number1, number2);
             }
             return 0.0;
