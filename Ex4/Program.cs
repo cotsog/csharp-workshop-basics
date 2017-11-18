@@ -10,7 +10,7 @@ namespace Ex4
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
 
         static void Main(string[] args)
         {
@@ -18,7 +18,13 @@ namespace Ex4
         }
 
         public static int largerNumber(int a, int b, int c) {
-            return 0;
+            if(a > b && a > c){
+                return a;
+            }
+            if (b > a && b > c){
+                return b;
+            }
+            return c;
         }
     }
 }
