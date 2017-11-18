@@ -27,6 +27,5 @@ namespace Ex4
             }
             return c;
             }
-            return 0;
         }
     }
