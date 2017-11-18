@@ -14,23 +14,24 @@ namespace Ex5
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED =true;
         static void Main(string[] args)
         { 
-            Console.WriteLine(SupressWhiteSpaces(""));
+            Console.WriteLine(SupressWhiteSpaces("hello jon doe"));
         }
 
-        public static string SupressWhiteSpaces(string text) {
-          string textwhitoutspace ="10";
-          if(text=="")
-          {
-              textwhitoutspace="";
-          }
-           else 
-           {
-            textwhitoutspace = text.Replace(" ","");
-           }
-            return textwhitoutspace;
+        public static string SupressWhiteSpaces(string text)
+        {
+            // tex==null
+          if (String.IsNullOrEmpty(text)) 
+            {
+                return  ("");
+            }
+            else
+            {
+            return text.Replace(" ","")
+            }
+         
         }
     }
 }
