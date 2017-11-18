@@ -27,21 +27,21 @@ namespace Ex6
 
         public static double Calculate(double number1, double number2, string op) {
             double salida=0.0; 
-          string op12 = op.Replace(" ","");
+        
  
-          if(op12=="+")
+          if(op=="+")
           {
               salida=number1+number2;
           }
-           if(op12=="-")
+           if(op=="-")
           {
               salida=number1-number2;
           }
-           if(op12=="*")
+           if(op=="*")
           {
               salida=number1*number2;
           }
-           if(op12=="/")
+           if(op=="/")
           {
               if(number2==0)
               {
@@ -52,7 +52,7 @@ namespace Ex6
               salida=number1/number2;
               }
           }
-           if(op12=="^")
+           if(op=="^")
           {
               salida=Math.Pow(number1,number2);
           }
