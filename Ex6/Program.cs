@@ -23,6 +23,7 @@ namespace Ex6
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Calculate(2,2,null);
         }
 
         public static double Calculate(double number1, double number2, string op) {
