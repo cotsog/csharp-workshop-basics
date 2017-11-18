@@ -22,7 +22,12 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            return 0.0;
+            
+            if(a <= 0 || b <= 0 || c <= 0){
+                return -1;
+            }
+            
+            return (a + b + c)/2;
         }
     }
 }
