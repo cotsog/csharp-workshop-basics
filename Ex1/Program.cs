@@ -16,7 +16,8 @@ namespace Ex1
             Console.WriteLine("Hello World");
         }
 
-        public static int sumTwoNumbers(int num1, int num2) {
+        public static int sumTwoNumbers(int num1, int num2) 
+        {
             
             int suma= num1 + num2;
 

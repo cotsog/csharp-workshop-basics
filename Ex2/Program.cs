@@ -12,7 +12,7 @@ namespace Ex2
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
 
         static void Main(string[] args)
         {
@@ -20,6 +20,7 @@ namespace Ex2
         }
     
         public static string GreetingsUser(string username) {
+            string hello= "Greetings + "
             return "";
         }    
     }
