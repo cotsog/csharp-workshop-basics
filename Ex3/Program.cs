@@ -14,7 +14,7 @@ namespace Ex3
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
 
         static void Main(string[] args)
         {
@@ -22,7 +22,11 @@ namespace Ex3
         }
 
         public static double triangleArea(double a, double b, double c) {
-            return 0.0;
+
+        if(a <= 0 || b <= 0 || c <= 0)
+        return -1;
+            triangleArea = (a + b + c)/ 2;
+            return triangleArea;
         }
     }
 }
