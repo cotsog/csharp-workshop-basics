@@ -22,7 +22,7 @@ namespace Ex6
         public static bool ENABLED = true;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine(Calculate(100,0,"/"));
         }
 
         public static double Calculate(double number1, double number2, string op) 
@@ -44,13 +44,18 @@ namespace Ex6
                        break;
 
                     case "*":
-                    salida= number1 * number2;
+                    salida= number1*number2;
                     break;
 
                     case "/":
-                    if(number2==0.0){salida=0.0;}
-                    else{
-                    salida= number1 / number2;}
+                    if(number2==0.0)
+                    {
+                        salida=0.0;
+                    }
+                    else
+                    {
+                    salida= number1 / number2;
+                    }
                     break;
 
                     case "^":
