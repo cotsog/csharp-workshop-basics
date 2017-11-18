@@ -32,22 +32,36 @@ namespace Ex6
             {
                 return 0.0;
             }
-            else if (op.Trim().Equals("*")) {
-                return number1 * number2;
-            } else if (op.Trim().Equals("+")) {
-                return number1 + number2;
-            } else if (op.Trim().Equals("-")) {
-                return number1 - number2;
-            } else if (op.Trim().Equals("/")) {
-                if (number2 == 0.0) {
-                    return 0.0;
-                } else {
+            string operators= op.Trim();
+                switch (operators)
+                {
+                    case "+":
+                    return number1 + number2;
+                    break;
+
+                    case "-":
+                    return number1 - number2;
+                    break;
+
+                    case "*":
+                    return number1 * number2;
+                    break;
+
+                    case "/":
+                    if(number2==0.0){return 0.0;}
                     return number1 / number2;
-                } 
-            } else if (op.Trim().Equals("^")) {
-                return Math.Pow(number1, number2);
-            }
-            return 0.0;
+                    break;
+
+                    case "^":
+                    return Math.Pow(number1,number2);
+                    break;
+                     
+                  default: 
+                  break;
+                
+                }
+           
+         
         }
     }
 }
