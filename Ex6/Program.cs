@@ -27,26 +27,31 @@ namespace Ex6
 
         public static double Calculate(double number1, double number2, string op) {
             double resultado=0.0;
-            string Operation=op.Trim();
-            if(Operation=="*"){
-                resultado=number1*number2;
+            if(op==null){
+                //No cambiar el valor de resultado
             }
-            else if(Operation=="-"){
-                resultado=number1-number2;
-            }
-            else if(Operation=="/"){
-                if(number2==0){
-                    resultado=0.0;
+            else{
+                string Operation=op.Trim();
+                if(Operation=="*"){
+                    resultado=number1*number2;
                 }
-                else{
-                    resultado=number1/number2;
+                else if(Operation=="-"){
+                    resultado=number1-number2;
                 }
-            }
-            else if(Operation=="^"){
-                resultado=Math.Pow(number1,number2);
-            }
-            else if(Operation=="+"){
-                resultado=number1+number2;
+                else if(Operation=="/"){
+                    if(number2==0){
+                        resultado=0.0;
+                    }
+                    else{
+                        resultado=number1/number2;
+                    }
+                }
+                else if(Operation=="^"){
+                    resultado=Math.Pow(number1,number2);
+                }
+                else if(Operation=="+"){
+                    resultado=number1+number2;
+                }
             }
             return resultado;
         }
