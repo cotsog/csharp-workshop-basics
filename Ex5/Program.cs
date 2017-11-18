@@ -21,6 +21,9 @@ namespace Ex5
         }
 
         public static string SupressWhiteSpaces(string text) {
+            if (text == null){
+                return string.Empty;
+            }
 
             return text.Replace(" ", "");
         }
