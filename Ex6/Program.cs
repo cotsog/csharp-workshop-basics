@@ -29,19 +29,19 @@ namespace Ex6
             double salida=0.0; 
         
  
-          if(op=="+")
+          if(op==" + ")
           {
               salida=number1+number2;
           }
-           if(op=="-")
+           if(op==" - ")
           {
               salida=number1-number2;
           }
-           if(op=="*")
+           if(op==" * ")
           {
               salida=number1*number2;
           }
-           if(op=="/")
+           if(op==" / ")
           {
               if(number2==0)
               {
@@ -52,7 +52,7 @@ namespace Ex6
               salida=number1/number2;
               }
           }
-           if(op=="^")
+           if(op==" ^ ")
           {
               salida=Math.Pow(number1,number2);
           }
