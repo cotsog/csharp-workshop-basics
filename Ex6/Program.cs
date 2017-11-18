@@ -19,7 +19,7 @@ namespace Ex6
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
