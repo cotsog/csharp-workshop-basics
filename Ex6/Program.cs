@@ -27,41 +27,41 @@ namespace Ex6
 
         public static double Calculate(double number1, double number2, string op) 
         {
-        
+        double salida=0.0;
             if (String.IsNullOrEmpty(op)) 
             {
-                return 0.0;
+                salida= 0.0;
             }
+            
             string operators= op.Trim();
                 switch (operators)
                 {
                     case "+":
-                    return number1 + number2;
-                    break;
-
-                    case "-":
-                    return number1 - number2;
-                    break;
+                     salida=number1 + number2;
+                     break;
+                     case "-":
+                      salida= number1 - number2;
+                       break;
 
                     case "*":
-                    return number1 * number2;
+                    salida= number1 * number2;
                     break;
 
                     case "/":
-                    if(number2==0.0){return 0.0;}
-                    return number1 / number2;
+                    if(number2==0.0){salida=0.0;}
+                    salida= number1 / number2;
                     break;
 
                     case "^":
-                    return Math.Pow(number1,number2);
+                   salida= Math.Pow(number1,number2);
                     break;
                      
-                  default: 
-                  break;
-                
+
+                     default:
+                     break;
                 }
            
-         
+         return salida;
         }
     }
 }
