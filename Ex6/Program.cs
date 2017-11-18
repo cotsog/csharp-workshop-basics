@@ -35,7 +35,7 @@ namespace Ex6
                 return number1 + number2;
             }
             if(operators == "-") {
-                return number1 + number2;
+                return number1 - number2;
             }
             if(operators == "*") {
                 return number1 * number2;
