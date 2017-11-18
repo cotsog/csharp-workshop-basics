@@ -25,39 +25,29 @@ namespace Ex6
             Console.WriteLine("Hello World");
         }
 
-        public static double Calculate(double number1, double number2, string op) {
-            double salida=0.0; 
+        public static double Calculate(double number1, double number2, string op) 
+        {
         
- 
-          if(op==" + "||op=="+")
-          {
-              salida=number1+number2;
-          }
-           if(op==" - "||op=="-")
-          {
-              salida=number1-number2;
-          }
-           if(op==" * "||op=="*")
-          {
-              salida=number1*number2;
-          }
-           if(op==" / "||op=="/")
-          {
-              if(number2==0)
-              {
-                  salida=0.0;
-              }
-              else
-              {
-              salida=number1/number2;
-              }
-          }
-           if(op==" ^ " ||  op=="^" )
-          {
-              salida=Math.Pow(number1,number2);
-          }
-          
-         return salida;
+            if (String.IsNullOrEmpty(op)) 
+            {
+                return 0.0;
+            }
+            else if (op.Trim().Equals("*")) {
+                return number1 * number2;
+            } else if (op.Trim().Equals("+")) {
+                return number1 + number2;
+            } else if (op.Trim().Equals("-")) {
+                return number1 - number2;
+            } else if (op.Trim().Equals("/")) {
+                if (number2 == 0.0) {
+                    return 0.0;
+                } else {
+                    return number1 / number2;
+                } 
+            } else if (op.Trim().Equals("^")) {
+                return Math.Pow(number1, number2);
+            }
+            return 0.0;
         }
     }
 }
