@@ -17,21 +17,13 @@ namespace Ex5
         public static bool ENABLED =false;
         static void Main(string[] args)
         { 
-            Console.WriteLine(SupressWhiteSpaces("hello jon doe"));
+            Console.WriteLine("Hello World");
         }
 
         public static string SupressWhiteSpaces(string text)
         {
-            // tex==null
-          if (String.IsNullOrEmpty(text)) 
-            {
-                return  ("");
-            }
-            else
-            {
-        
-            }
-         
+           
+         return "";
         }
     }
 }
