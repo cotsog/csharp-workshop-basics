@@ -22,8 +22,32 @@ namespace Ex8
         {
             Console.WriteLine("Hello World!");
         }
-        public static int sum2NWithNegatives(int n) {
-            return 0;
+        public static int sum2NWithNegatives(int n) 
+        {
+            int sum=0;
+            if(n>0)
+            {
+                for(int i=1;i<=n;i++)
+                {
+                    sum=sum+i;
+                }
+            }
+            else
+            {
+                if(n<0)
+                {
+                    for(int j=-1;j<=n;j--)
+                    {
+                       sum= sum+j;
+                    }
+                }
+                if(n==0)
+                {
+                    sum=0;
+                }
+            }
+            return sum;
+        }
         }
     }
-}
+

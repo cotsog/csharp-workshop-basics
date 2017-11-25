@@ -20,7 +20,16 @@ namespace Ex7
             Console.WriteLine("Hello World!");
         }
         public static int sum2N(int n) {
-            return 0;
+             int sum =0;
+            if(n>0)
+            {
+                for(int i=1;i<=n;i++)
+                {
+                    sum=sum+i;
+                }
+            }
+
+            return sum;
         }
     }
 }
