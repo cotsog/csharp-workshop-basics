@@ -14,13 +14,19 @@ namespace Ex7
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
         public static int sum2N(int n) {
-            return 0;
+            int resultado =1;
+            for(int i=1; i <= n; i++){
+                resultado = resultado*i;
+            }
+    
+    
+            return resultado;
         }
     }
 }
