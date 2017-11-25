@@ -36,7 +36,29 @@ namespace Ex9
         }
 
         public static bool isPrime(int number) {
-            return false;
+         bool answ = false;
+         int divisores=0;
+            if (number<=0)
+            {
+                answ=false;
+            }
+
+            else
+              {
+                 for(int i=1; i<=number;i++)
+                 {
+                    if (number%i==0)
+                    {
+                        divisores++;
+                    }
+                 }
+                 if(divisores==2)
+                 {
+                     answ=true;
+                 }
+              }
+
+            return answ;
         }
     }
 }
