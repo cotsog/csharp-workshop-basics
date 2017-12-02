@@ -32,7 +32,7 @@ namespace Ex8
                 }//Fin del IF n>0
                 else if(n<0){
                     //Realizamos un contador para sumar los valores de n
-                    for(int i=-1;i>=n;i--){
+                    for(int i=-1;i>=n;i++){
                         sumados-=i;
                     }
                 }//Fin del IF n<0
