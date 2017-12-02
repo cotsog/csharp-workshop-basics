@@ -21,14 +21,12 @@ namespace Ex7
         }
         public static int sum2N(int n) {
             int sumados=0;
-            if(n!=null){
                 if(n>0){
                     //Realizamos un contador para sumar los valores de n
                     for(int i=1;i<=n;i++){
                         sumados+=i;
                     }
                 }//Fin del IF n>0
-            }//Fin del IF != null
             return sumados;
         }//Fin sum2N
     }

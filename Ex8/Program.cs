@@ -17,13 +17,26 @@ namespace Ex8
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
         public static int sum2NWithNegatives(int n) {
-            return 0;
-        }
+            int sumados=0;
+                if(n>0){
+                    //Realizamos un contador para sumar los valores de n
+                    for(int i=1;i<=n;i++){
+                        sumados+=i;
+                    }
+                }//Fin del IF n>0
+                else if(n<0){
+                    //Realizamos un contador para sumar los valores de n
+                    for(int i=-1;i>=n;i--){
+                        sumados-=i;
+                    }
+                }//Fin del IF n<0
+            return sumados;
+        }//Fin sum2NWithNegatives
     }
 }
