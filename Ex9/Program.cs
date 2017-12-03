@@ -29,14 +29,43 @@ namespace Ex9
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
         }
 
         public static bool isPrime(int number) {
-            return false;
+            bool state=false;
+            int div_res=0;
+            int validate=0;
+            int comprobando=0;
+            if(number<=0){
+                //No se modifica el estado de falso
+            }
+            //Cuando el number es valido
+            else{
+                //Operaciones
+                for(int i=1;i<=number;i++){
+                    div_res=number%i;
+                    if(div_res==0){
+                        validate=i;
+                        if(validate==1){
+                            comprobando=1;
+                        }
+                        else if(validate==number){
+                            comprobando=2;
+                        }
+                        else{
+                            comprobando=0;
+                        }
+                        if(comprobando==2){
+                            state=true;
+                        }
+                    }
+                }//Fin del for
+            }//Fin del else
+            return state;
         }
     }
 }
