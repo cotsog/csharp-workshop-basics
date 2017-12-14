@@ -36,8 +36,7 @@ namespace Ex10
 
         public static string findFirstPrimeNumbers(int n) {
             string prime_numbers="";
-            string prime_list[20]={""};
-            int residuo=0;
+            int residuo=0, prime_list[20];
             int cont_sub=0;
             int index_primels=0;
             //Verificamos que no pongan el valor de 0 en n
