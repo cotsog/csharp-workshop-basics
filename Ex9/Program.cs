@@ -36,6 +36,7 @@ namespace Ex9
         }
 
         public static bool isPrime(int number) {
+            //Si funciona segun travis
             bool state=false;
             int residuo=0;
             int cont_sub=0;

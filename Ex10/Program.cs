@@ -28,14 +28,51 @@ namespace Ex10
 {
     public class Program
     {
-        public static bool ENABLED = false;
+        public static bool ENABLED = true;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
         }
 
         public static string findFirstPrimeNumbers(int n) {
-            return "";
+            string prime_numbers="";
+            int prime_list[20];
+            int residuo=0;
+            int cont_sub=0;
+            int index_primels=0;
+            //Verificamos que no pongan el valor de 0 en n
+            if(n!=0){
+                 //Generando el doble for anidado lol
+                for(int i=1;i<=n;i++){
+                    //Como si generaramos las tablas vamos a calcular numeros primos
+                    for(int j=1;j<=i;j++){
+                        residuo=i%j;
+                         //Revisando residuo 0 para revisar submultiplo
+                        if(residuo==0){
+                            cont_sub+=1;
+                        }
+                    }//Fin del for que maneja j
+                    //Comprobamos que solo sean dos submultiplos
+                    if(cont_sub==2){
+                        //Agregamos los valores que sean primos en su respectivo index
+                        prime_list[index_primels]=i.ToString()+",";
+                        index_primels++;
+                    }
+                    //Reiniciamos el valor de cont_sub para corroborar el otro numero
+                    cont_sub=0;
+                }//Fin del for que maneja i
+                //Ahora borramos la ultima ,
+                index_primels--;//Ocupamos el valor anterior para borrar le la coma
+                prime_list[index_primels].Replace(",","");//Reemplazamos la , por el espacio vacio
+                //Ahora lo imprimimos
+                for(i=0;i<=index_primels;i++){
+                    return prime_numbers=prime_list[i];
+                }
+            }//Fin del IF
+            else{
+                //Cuando vale 0 no se modifica el string
+            }
+            return prime_numbers;
         }
     }
 }
