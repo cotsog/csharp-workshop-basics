@@ -37,9 +37,8 @@ namespace Ex9
 
         public static bool isPrime(int number) {
             bool state=false;
-            int div_res=0;
-            int validate=0;
-            int comprobando=0;
+            int residuo=0;
+            int cont_sub=0;
             if(number<=0){
                 //No se modifica el estado de falso
             }
@@ -47,23 +46,16 @@ namespace Ex9
             else{
                 //Operaciones
                 for(int i=1;i<=number;i++){
-                    div_res=number%i;
-                    if(div_res==0){
-                        validate=i;
-                        if(validate==1){
-                            comprobando=1;
-                        }
-                        else if(validate==number){
-                            comprobando=2;
-                        }
-                        else{
-                            comprobando=0;
-                        }
-                        if(comprobando==2){
-                            state=true;
-                        }
+                    residuo=number%i;
+                    //Revisando residuo 0 para revisar submultiplo
+                    if(residuo==0){
+                        cont_sub+=1;
                     }
                 }//Fin del for
+                //Comprobamos que solo sean dos submultiplos
+                if(cont_sub==2){
+                    state=true;
+                }
             }//Fin del else
             return state;
         }
