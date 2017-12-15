@@ -55,7 +55,7 @@ namespace Ex10
                     //Comprobamos que solo sean dos submultiplos
                     if(cont_sub==2){
                         //Agregamos los valores que sean primos en su respectivo index
-                        new prime_list[index_primels]=i.ToString()+",";
+                        [index_primels]prime_list=i.ToString()+",";
                         index_primels++;
                     }
                     //Reiniciamos el valor de cont_sub para corroborar el otro numero
@@ -63,10 +63,10 @@ namespace Ex10
                 }//Fin del for que maneja i
                 //Ahora borramos la ultima ,
                 index_primels--;//Ocupamos el valor anterior para borrar le la coma
-                prime_list[index_primels].Replace(",","");//Reemplazamos la , por el espacio vacio
+                [index_primels]prime_list.Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
                 for(int k=0;k<=index_primels;k++){
-                    return new prime_list[k];
+                    return [k]prime_list;
                 }
             }//Fin del IF
             else{
