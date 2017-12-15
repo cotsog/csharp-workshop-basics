@@ -36,7 +36,7 @@ namespace Ex10
 
         public static string findFirstPrimeNumbers(int n) {
             string prime_numbers="";
-            string[] prime_list;
+            string[] prime_list=new string[] {""};
             int residuo=0;
             int cont_sub=0;
             int index_primels=0;
@@ -65,7 +65,7 @@ namespace Ex10
                 //index_primels--;//Ocupamos el valor anterior para borrar le la coma
                 //[index_primels] prime_list.Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
-                foreach (var item in prime_list)
+                foreach (string item in prime_list)
                 {
                     return prime_list[item];
                 }        
