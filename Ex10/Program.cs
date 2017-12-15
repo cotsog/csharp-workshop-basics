@@ -65,9 +65,9 @@ namespace Ex10
                 //index_primels--;//Ocupamos el valor anterior para borrar le la coma
                 //[index_primels] prime_list.Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
-                foreach (string item in prime_list)
+                foreach (int item in prime_list)
                 {
-                    return prime_list[item];
+                    return string[] prime_list= new string[] {item};
                 }        
             }//Fin del IF
             else{
