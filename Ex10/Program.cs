@@ -55,18 +55,18 @@ namespace Ex10
                     //Comprobamos que solo sean dos submultiplos
                     if(cont_sub==2){
                         //Agregamos los valores que sean primos en su respectivo index
-                        [index_primels]prime_list=i.ToString()+",";
+                        prime_list= new string[index_primels] {i.ToString()+","};
                         index_primels++;
                     }
                     //Reiniciamos el valor de cont_sub para corroborar el otro numero
                     cont_sub=0;
                 }//Fin del for que maneja i
                 //Ahora borramos la ultima ,
-                index_primels--;//Ocupamos el valor anterior para borrar le la coma
-                [index_primels]prime_list.Replace(",","");//Reemplazamos la , por el espacio vacio
+                //index_primels--;//Ocupamos el valor anterior para borrar le la coma
+                //[index_primels] prime_list.Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
                 for(int k=0;k<=index_primels;k++){
-                    return [k]prime_list;
+                    return prime_list= new string[k];
                 }
             }//Fin del IF
             else{
