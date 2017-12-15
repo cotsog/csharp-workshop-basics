@@ -67,7 +67,7 @@ namespace Ex10
                 //Ahora lo imprimimos
                 foreach (int item in prime_list)
                 {
-                    return string[] prime_list= new string[] {item};
+                    return prime_list= new string[] {item};
                 }        
             }//Fin del IF
             else{
