@@ -35,7 +35,6 @@ namespace Ex10
         }
 
         public static string findFirstPrimeNumbers(int n) {
-            string prime_numbers="";
             string[] prime_list;
             int residuo=0;
             int cont_sub=0;
@@ -66,7 +65,7 @@ namespace Ex10
                 prime_list[index_primels].Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
                 for(i=0;i<=index_primels;i++){
-                    return prime_numbers=prime_list[i];
+                    return prime_list[i];
                 }
             }//Fin del IF
             else{
