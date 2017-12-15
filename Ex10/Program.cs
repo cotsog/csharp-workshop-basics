@@ -64,7 +64,7 @@ namespace Ex10
                 index_primels--;//Ocupamos el valor anterior para borrar le la coma
                 prime_list[index_primels].Replace(",","");//Reemplazamos la , por el espacio vacio
                 //Ahora lo imprimimos
-                for(i=0;i<=index_primels;i++){
+                for(int i=0;i<=index_primels;i++){
                     return prime_list[i];
                 }
             }//Fin del IF
